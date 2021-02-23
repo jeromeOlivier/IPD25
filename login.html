@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Title</title>
+</head>
+<body onload="runTheFollowing()">
+
+    <fieldset>
+        <legend>&nbsp;Login&nbsp;</legend>
+        <label for="email" class="form normalColor">Email Address</label><br>
+        <input type="text" id="email" class="form input"><br>
+        <label for="password" class="form normalColor">Password</label><br>
+        <input type="password" id="password" class="form input"><br>
+        <button type="reset" class="button" id="submitButton"
+                onclick="submitButton()">
+            Submit&nbsp;&rightarrow;
+        </button>
+        <br>
+        <br>
+        <div id="information" class="form normalColor">
+            <p>Message of the day: <span id="message" class="messageColor"></span></p>
+            <p>Current date: <span id="date"></span></p>
+            <p>Current time: <span id="time"></span></p>
+        </div>
+        <div id="errors" class="form errorColor">
+
+        </div>
+        <div id="weatherForecast" class="form">
+
+        </div>
+    </fieldset>
+
+    <script src="js/login.js"></script>
+
+</body>
+</html>
